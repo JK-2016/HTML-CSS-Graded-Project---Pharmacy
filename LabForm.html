@@ -13,7 +13,7 @@
             <Form>
                 <div class="FormWrapper">
                     <div class="Formdata">
-                        <h2>Your Contact details</h2>
+                        <h2>1.Your Contact details</h2>
                         <input type="text" placeholder="Full Name" name="name" required>
                         <input type="text" placeholder="Patient Id if exists" name="id" required><br>
                         <input type="text" placeholder="Contact Number" name="number" required>
@@ -30,29 +30,31 @@
                             <option value="Tirupati"></option>
                         </datalist>
                     
+                        <div class="tests">
+                            <h2>3.Choose the Test Type</h2>
+                            <h3>Check atleast one box without fail</h3>
+                            <input type="checkbox" required>
+                            <label for="cbc"> CBC</label><br>
+                            <input type="checkbox" required>
+                            <label for="urine"> Complete Urine</label><br>
+                            <input type="checkbox" required>
+                            <label for="lipid"> Lipid Profile</label><br>
+                            <input type="checkbox" required>
+                            <label for="TSH"> Thyroid Stimulating Hormone(TSH)</label><br>
+                            <input type="checkbox" required>
+                            <label for="glucose"> Glucose Test</label><br>
+                        
+                        </div>
+                        
                     
-                        <h2>Choose the Test Type</h2>
-                        <h3>Check atleast one box without fail</h3>
-                        <input type="checkbox"  required>
-                        <label for="cbc"> CBC</label><br>
-                        <input type="checkbox" required>
-                        <label for="urine"> Complete Urine</label><br>
-                        <input type="checkbox"  required>
-                        <label for="lipid"> Lipid Profile</label><br>
-                        <input type="checkbox"  required>
-                        <label for="TSH"> Thyroid Stimulating Hormone(TSH)</label><br>
-                        <input type="checkbox"  required>
-                        <label for="glucose"> Glucose Test</label><br>
-                    
-                    
-                        <h2>Do you want a hard copy of the report also?</h2>
+                        <h3>4.Do you want a hard copy of the report also?</h3>
                         <input type="checkbox" name="Yes" required>
-                        <label for="yes">Yes</label><br>
+                        <label for="yes" id="yesLbl">Yes</label><br>
                         <input type="checkbox" placeholder="No" name="No" required>
-                        <label for="no">No</label><br>
+                        <label for="no" id="noLbl" >No</label><br>
                     
                     
-                        <label for="meeting-time">Select Your Comfortable Date and Time</label>
+                        <label for="meeting-time" id="appointmentLbl">5.Select Your Comfortable Date and Time</label>
                     
                         <input type="datetime-local" id="meeting-time" name="meeting-time" placeholder="select date and time">
                     </div>
