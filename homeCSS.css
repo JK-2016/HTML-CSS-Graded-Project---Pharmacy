@@ -1,16 +1,28 @@
 body{
-    background-color:white
+    background-color:whitesmoke;
+    margin:0;
+   padding:0;
+   height:100%;
+}
+.topfixed{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 .header1{
     text-align: right;
     background-color: aquamarine;
     padding: 25px ;
-    margin-bottom: 0px
+    vertical-align: top;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 .navbar {
     overflow: hidden;
     background-color: #333;
     font-family: Arial;
+    /* position: fixed; */
 
   }
   
@@ -53,14 +65,17 @@ body{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  .container{
+    max-height: 70%;
+    z-index: -1;
+    
+  }
   /*For animation of images*/
   .animationOffers{
-    /* padding : 4px;
-    
-     margin: 4px;
-     height :50% */
      margin-left: auto;
      margin-right: auto;
+     padding-top: 150px;
   }
   .animationOffers img{
 
@@ -69,25 +84,25 @@ body{
      /* visibility: hidden; */
      border-color: steelblue;
      border-style: solid;
+     
      position: absolute;
+     /* top: 100px; */
      left: 10px;
      right: 10px;
-     
+     /* margin-top: 150px; */
      display: block;
      margin-left: auto;
      margin-right: auto;
     
      height: 50%;
      opacity: 0;
+     
      /* animation: ima 1s 4s infinite; */
   }
-  /* .image1{
-    display: contents;
-    animation: image1 1s infinite;
-  } */
+  
   
   #img1{
-    /* opacity: 1 !important; */
+    
     animation: ima 10s infinite; }
   @keyframes ima {
     0%{ opacity: 0.25; }
@@ -163,21 +178,16 @@ body{
     display: table !important;
     width: 100%; /*Optional*/
     table-layout: fixed; /*Optional*/
-    border-spacing: 10px; /*Optional*/
-    /* top:80% */
+    border-spacing: 20px; /*Optional*/
    }
   
-  /* #CovidCare{
-        position: absolute;
-        top:80%;
-   } */
 
    .Diabetic-Care {
     position: relative;
     display: table;
     width: 100%; /*Optional*/
     table-layout: fixed; /*Optional*/
-    border-spacing: 10px; /*Optional*/
+    border-spacing: 20px; /*Optional*/
     top:120%
    }
  
@@ -187,9 +197,13 @@ body{
     margin: 0px;
   }
   .products button{
-    border-color: blue;
-    background-color:azure ;
-    
+    border-color: green;
+    background-color: rgba(0, 132, 255, 0.432)  ;
+    width: 80%;
+    font-size: medium;
+    font-weight: bold;
+    color: darkblue;
+    border-radius: 7px;
   }
   .products button:focus{
     background-color: rgb(250,234,230);
@@ -199,10 +213,6 @@ body{
 
   .products img{
     position: relative;
-    /* max-width: 100%;
-    min-height: 100%;
-    height: 150 px !important; */
-    /* object-fit: cover; */
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
@@ -224,11 +234,13 @@ body{
     height: 400 px;
     min-width: 310 px;
     margin-left: 10px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     padding-top: 5px;
     padding-bottom: 10px;
-    background-color: burlywood;
+    box-shadow: 2px 2px 20px 5px grey;
+    background-color: azure;
     text-align: center;
+    font-weight: bold;
 
   }
   .para p{
@@ -236,8 +248,22 @@ body{
     justify-self: left;
     margin: 0px;
   }
-
-  .footer{
-    text-align: center;
+  .price p{
+    text-align: left !important;
+    justify-self: left;
+    margin: 0px;
+    color: blue;
   }
-  
+  .divFooter{
+    vertical-align: bottom;
+    
+  }
+  #footer {
+    text-align: center;
+    position:fixed;
+    /* position: static; */
+    bottom:0;
+    background-color: #333;
+    color: #f9f9f9;
+    width:100%;
+ }  
